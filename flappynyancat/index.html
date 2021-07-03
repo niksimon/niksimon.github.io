@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Flappy Nyan Cat</title>
+    <meta name="description" content="Flappy Nyan Cat HTML5 Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+    <style>
+      html,
+      body {
+        background-color: #111;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+      body {
+        min-height: 100vh;
+      }
+      canvas {
+        display: block;
+        width: 1200px;
+        height: 700px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        border: 4px solid #333;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas class="canvas" id="canvas"></canvas>
+    <script src="game.js" async defer></script>
+  </body>
+</html>
