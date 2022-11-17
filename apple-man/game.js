@@ -833,7 +833,7 @@ window.onload = function(){
 		}
 
 		function update(){
-			requestAnimationFrame(update);
+			//requestAnimationFrame(update);
 			context.clearRect(0, 0, width, height);
 			var background = context.createRadialGradient(width / 2, height / 2, 0, width / 2, height / 2, 500);
 			background.addColorStop(0, "#C5DBEB");
@@ -951,7 +951,7 @@ window.onload = function(){
 			showFPS();
 		}
 
-		update();
+		setInterval(update, 8);
 
 	}
 };
