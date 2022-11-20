@@ -89,6 +89,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   -webkit-animation: animate 4s linear infinite;
   animation: animate 4s linear infinite;
+  padding-bottom: 5px;
 }
 .title p {
   padding: 0.3rem 0 0.6rem;
