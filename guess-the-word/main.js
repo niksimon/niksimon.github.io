@@ -143,3 +143,16 @@ function enterHandler(e) {
         }
     }
 }
+
+function resizeHandler() {
+    if(window.innerHeight < 750) {
+        document.getElementById("word-grid").style.maxWidth = `${400 - (750 - window.innerHeight)}px`;
+    }
+    else {
+        document.getElementById("word-grid").style.maxWidth = `400px`;
+    }
+}
+
+window.addEventListener("resize", resizeHandler);
+
+resizeHandler();

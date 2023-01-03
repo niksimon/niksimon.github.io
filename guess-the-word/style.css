@@ -18,9 +18,11 @@ h1 {
 }
 .main {
     width: 400px;
+    padding: 0 5px;
+    box-sizing: border-box;
 }
 .word-grid {
-    margin: 0 5px;
+    margin: 0 auto;
     background-color: #222;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -57,7 +59,7 @@ h1 {
 .keyboard {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
-    padding: 10px 5px 0;
+    padding: 10px 0;
 }
 .keyboard-row {
     display: grid;
@@ -78,7 +80,7 @@ h1 {
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 5px;
     background-color: #444;
     border: none;
     border-radius: 5px;
@@ -122,7 +124,7 @@ h1 {
 .modal-finished span {
     color:#128008;
 }
-@media screen and (max-height: 800px) {
+/* @media screen and (max-height: 800px) {
     .word-grid {
         max-width: 300px;
         margin: 0 auto;
@@ -130,4 +132,4 @@ h1 {
     .keyboard {
         padding-top: 30px;
     }
-}
+} */
