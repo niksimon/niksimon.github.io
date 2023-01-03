@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+html, body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    margin: 0;
+}
+.main {
+    width: 400px;
+}
+.word-grid {
+    margin: 0 5px;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px;
+    
+    box-sizing: border-box;
+}
+.word-letter {
+    display: flex;
+    aspect-ratio: 1;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 2px solid #777;
+    font-size: 2rem;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+.word-letter-current {
+    border-color: #fff;
+}
+.keyboard {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 15px 5px;
+}
+.keyboard-row {
+    display: grid;
+    grid-gap: 3px;
+    padding-bottom: 5px;
+}
+.keyboard-row:nth-child(1) {
+    grid-template-columns: repeat(10, 1fr);
+}
+.keyboard-row:nth-child(2) {
+    grid-template-columns: repeat(9, 1fr);
+}
+.keyboard-row:nth-child(3) {
+    grid-template-columns: 2fr repeat(7, 1fr) 2fr;
+}
+.keyboard-button, .keyboard-button-enter, .keyboard-button-delete {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: #222;
+    border: 1px solid #999;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.keyboard-button-delete {
+    font-size: 1.8rem;
+}
+.modal-invalid-word, .modal-finished {
+    opacity: 0;
+    background-color: #fff;
+    position: fixed;
+    color: #000;
+    padding: 15px 25px;
+    border-radius: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    transition: opacity 500ms;
+    user-select: none;
+    text-align: center;
+}
+
+.modal-finished p {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.modal-finished span {
+    color:#128008;
+}
