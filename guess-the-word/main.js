@@ -16,7 +16,6 @@ fetch("words.json")
     const rnd = Math.floor(Math.random() * json.length);
     chosen = json[rnd];
     words = new Set(json);
-    console.log(chosen);
 });
 
 let current = 1;
@@ -76,7 +75,7 @@ function enterHandler(e) {
         }
         // check if word is valid
         if(!words.has(word)) {
-            console.log(word);
+            //console.log(word);
             document.getElementById("modal-invalid-word").style.opacity = 1;
             setTimeout(() => {
                 document.getElementById("modal-invalid-word").style.opacity = 0;
@@ -89,7 +88,6 @@ function enterHandler(e) {
             }
             let chosenLettersCount = {};
             chosen.split("").forEach(c => chosenLettersCount[c] = chosenLettersCount[c] ? chosenLettersCount[c] + 1 : 1);
-            console.log(chosenLettersCount);
             let correctLetters = [];
             // get correctly positioned letters first
             for(let i = 0; i < 5; i++) {
