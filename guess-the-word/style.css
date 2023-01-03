@@ -27,12 +27,6 @@ h1 {
     grid-gap: 5px;
     box-sizing: border-box;
 }
-@media screen and (max-height: 800px) {
-    .word-grid {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-}
 .word-letter {
     display: flex;
     aspect-ratio: 1;
@@ -50,8 +44,8 @@ h1 {
     border-color: #333;
 }
 .word-letter-correct {
-    background-color: #46b53c;
-    border-color: #46b53c;
+    background-color: #42a938;
+    border-color: #42a938;
 }
 .word-letter-wrong-order {
     background-color: #b59f3b;
@@ -97,7 +91,7 @@ h1 {
     background-color: #222;
 }
 .keyboard-button-correct {
-    background-color: #46b53c;
+    background-color: #42a938;
 }
 .keyboard-button-wrong-order {
     background-color: #b59f3b;
@@ -127,4 +121,13 @@ h1 {
 
 .modal-finished span {
     color:#128008;
+}
+@media screen and (max-height: 800px) {
+    .word-grid {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .keyboard {
+        padding-top: 30px;
+    }
 }
