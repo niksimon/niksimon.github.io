@@ -39,8 +39,7 @@ function keyDownHandler(e) {
 }
 
 function btnKeyHandler(e) {
-    if(e.target.dataset.key === undefined) return;
-    inputLetter(e.target.dataset.key);
+    inputLetter(e.target.dataset?.key);
 }
 
 function inputLetter(letter) {
