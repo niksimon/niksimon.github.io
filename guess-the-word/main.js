@@ -39,7 +39,8 @@ function keyDownHandler(e) {
 }
 
 function btnKeyHandler(e) {
-    inputLetter(e.target.getAttribute("data-key"));
+    if(e.target.dataset.key === undefined) return;
+    inputLetter(e.target.dataset.key);
 }
 
 function inputLetter(letter) {
@@ -185,9 +186,12 @@ function confetti() {
     }
 }
 
-document.querySelectorAll(".keyboard-button").forEach(btn => {
-    btn.addEventListener("click", btnKeyHandler);
-});
+document.getElementById("keyboard").addEventListener("click", btnKeyHandler);
+
+// document.querySelectorAll(".keyboard-button").forEach(btn => {
+//     btn.addEventListener("click", btnKeyHandler);
+// });
+
 document.getElementById("keyboard-button-delete").addEventListener("click", deleteHandler);
 document.getElementById("keyboard-button-enter").addEventListener("click", enterHandler);
 
