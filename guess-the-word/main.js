@@ -134,9 +134,7 @@ function enterHandler() {
 
             // found correct word or at last row
             if(correct || row === 6) {
-                document.querySelectorAll(".keyboard-button").forEach(btn => {
-                    btn.removeEventListener("click", btnKeyHandler);
-                });
+                document.getElementById("keyboard").removeEventListener("click", btnKeyHandler);
                 document.getElementById("keyboard-button-enter").removeEventListener("click", enterHandler);
                 document.getElementById("keyboard-button-delete").removeEventListener("click", deleteHandler);
                 document.removeEventListener("keydown", keyDownHandler);
@@ -187,11 +185,6 @@ function confetti() {
 }
 
 document.getElementById("keyboard").addEventListener("click", btnKeyHandler);
-
-// document.querySelectorAll(".keyboard-button").forEach(btn => {
-//     btn.addEventListener("click", btnKeyHandler);
-// });
-
 document.getElementById("keyboard-button-delete").addEventListener("click", deleteHandler);
 document.getElementById("keyboard-button-enter").addEventListener("click", enterHandler);
 
