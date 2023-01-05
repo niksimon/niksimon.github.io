@@ -33,32 +33,18 @@ function keyDownHandler(e) {
     }
     else if(e.key === "Enter") {
         enterHandler();
+        return;
     }
-    
     inputLetter(e.key);
 }
 
 function btnKeyHandler(e) {
     inputLetter(e.target.getAttribute("data-key"));
-    // if(!fullWord) {
-    //     firstLetter = false;
-    //     const key = e.target.getAttribute("data-key");
-    //     document.getElementById(`letter${row}${current}`).innerHTML = key;
-    //     document.getElementById(`letter${row}${current}`).classList.remove("word-letter-current");
-    //     if(current % 5 !== 0) {
-    //         current++;
-    //         document.getElementById(`letter${row}${current}`).classList.add("word-letter-current");
-    //     }
-    //     else {
-    //         fullWord = true;
-    //     }
-    // }
 }
 
 function inputLetter(letter) {
     if(!fullWord && /^[a-z]$/.test(letter)) {
         firstLetter = false;
-        //const key = e.target.getAttribute("data-key");
         document.getElementById(`letter${row}${current}`).innerHTML = letter;
         document.getElementById(`letter${row}${current}`).classList.remove("word-letter-current");
         if(current % 5 !== 0) {
