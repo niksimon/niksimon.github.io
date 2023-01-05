@@ -26,11 +26,40 @@ let correctLettersInOrder = new Set();
 
 document.getElementById("letter11").classList.add("word-letter-current");
 
+function keyDownHandler(e) {
+    if(e.key === "Backspace") {
+        deleteHandler();
+        return;
+    }
+    else if(e.key === "Enter") {
+        enterHandler();
+    }
+    
+    inputLetter(e.key);
+}
+
 function btnKeyHandler(e) {
-    if(!fullWord) {
+    inputLetter(e.target.getAttribute("data-key"));
+    // if(!fullWord) {
+    //     firstLetter = false;
+    //     const key = e.target.getAttribute("data-key");
+    //     document.getElementById(`letter${row}${current}`).innerHTML = key;
+    //     document.getElementById(`letter${row}${current}`).classList.remove("word-letter-current");
+    //     if(current % 5 !== 0) {
+    //         current++;
+    //         document.getElementById(`letter${row}${current}`).classList.add("word-letter-current");
+    //     }
+    //     else {
+    //         fullWord = true;
+    //     }
+    // }
+}
+
+function inputLetter(letter) {
+    if(!fullWord && /^[a-z]$/.test(letter)) {
         firstLetter = false;
-        const key = e.target.getAttribute("data-key");
-        document.getElementById(`letter${row}${current}`).innerHTML = key;
+        //const key = e.target.getAttribute("data-key");
+        document.getElementById(`letter${row}${current}`).innerHTML = letter;
         document.getElementById(`letter${row}${current}`).classList.remove("word-letter-current");
         if(current % 5 !== 0) {
             current++;
@@ -42,7 +71,7 @@ function btnKeyHandler(e) {
     }
 }
 
-function deleteHandler(e) {
+function deleteHandler() {
     if(!firstLetter) {
         if(fullWord) {
             document.getElementById(`letter${row}${current}`).innerHTML = "";
@@ -61,7 +90,7 @@ function deleteHandler(e) {
     }
 }
 
-function enterHandler(e) {
+function enterHandler() {
     if(fullWord) {
         let word = "";
         for(let i = 1; i <= 5; i++) {
@@ -123,6 +152,7 @@ function enterHandler(e) {
                 });
                 document.getElementById("keyboard-button-enter").removeEventListener("click", enterHandler);
                 document.getElementById("keyboard-button-delete").removeEventListener("click", deleteHandler);
+                document.removeEventListener("keydown", keyDownHandler);
                 // win
                 if(correct) {
                     document.getElementById("modal-text").innerHTML = "YOU WIN!";
@@ -175,12 +205,15 @@ document.querySelectorAll(".keyboard-button").forEach(btn => {
 document.getElementById("keyboard-button-delete").addEventListener("click", deleteHandler);
 document.getElementById("keyboard-button-enter").addEventListener("click", enterHandler);
 
+document.addEventListener('keydown', keyDownHandler);
+
 document.getElementById("close-modal").addEventListener("click", () => {
     document.getElementById("modal-finished").style.opacity = 0;
     setTimeout(() => {
         document.getElementById("modal-finished").style.display = "none";
     }, 500);
 });
+
 
 window.addEventListener("resize", resizeHandler);
 

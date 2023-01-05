@@ -90,6 +90,9 @@ h1 {
     text-transform: uppercase;
     cursor: pointer;
 }
+.keyboard-button-enter, .keyboard-button-delete {
+    border: 1px solid #ccc;
+}
 .keyboard-button-not-in-word {
     background-color: #222;
 }
