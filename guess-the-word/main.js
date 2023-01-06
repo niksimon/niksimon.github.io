@@ -147,14 +147,15 @@ function enterHandler() {
                 setTimeout(() => {
                     // win
                     if(correct) {
-                        document.getElementById("modal-text").innerHTML = "YOU WIN!";
+                        document.getElementById("modal-text").innerHTML = `<span class="win-letter">Y</span><span class="win-letter">O</span><span class="win-letter">U</span><span class="win-letter"> W</span><span class="win-letter">I</span><span class="win-letter">N</span><span class="win-letter">!</span>`;
                         confetti();
                     }
                     // lose
                     else {
-                        document.getElementById("modal-text").innerHTML = `<p style='font-size:2.5rem'>WRONG!</p><p style='font-size:1.5rem'>Correct word is <span>${chosen}</span></p>`;
+                        document.getElementById("modal-text").innerHTML = `<p style='font-size:2.5rem'>WRONG!</p><p style='font-size:1.5rem'>Correct word is <span style='color:#128008'>${chosen}</span></p>`;
                     }
                     document.getElementById("modal-finished").style.display = "flex";
+                    setTimeout(() => document.querySelectorAll(".win-letter").forEach(el => el.style.animationName = "upDown"), 500);
                     setTimeout(() => {document.getElementById("modal-finished").style.opacity = 1;}, 50);
                 }, 1000);
                 return;

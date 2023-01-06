@@ -141,9 +141,17 @@ h1 {
     padding: 5px 0;
     margin: 0;
 }
-.modal-finished span {
-    color:#128008;
+.win-letter {
+    position: relative;
+    top: 0;
+    animation-duration: 1s;
 }
+.win-letter:nth-child(2) { animation-delay: 100ms;}
+.win-letter:nth-child(3) { animation-delay: 200ms;}
+.win-letter:nth-child(4) { animation-delay: 300ms;}
+.win-letter:nth-child(5) { animation-delay: 400ms;}
+.win-letter:nth-child(6) { animation-delay: 500ms;}
+.win-letter:nth-child(7) { animation-delay: 600ms;}
 .close-modal {
     position: absolute;
     top: 0;
@@ -180,13 +188,18 @@ h1 {
   from {top: 0;transform: rotate3d(1, 1, 0, 0deg);}
     to {top: 100%;transform: rotate3d(1, 1, 0, 360deg); }
 }
-
 @keyframes drop2 {
   from {top: 0;transform: rotate3d(0, 1, 1, 0deg);}
     to {top: 100%;transform: rotate3d(0, 1, 1, 360deg);}
 }
-
 @keyframes drop3 {
-      from {top: 0;transform: rotate3d(1, 0, 1, 0deg);}
-        to {top: 100%;transform: rotate3d(1, 0, 1, 360deg);}
-    }
+  from {top: 0;transform: rotate3d(1, 0, 1, 0deg);}
+    to {top: 100%;transform: rotate3d(1, 0, 1, 360deg);}
+}
+
+@keyframes upDown {
+    0% {top: 0}
+    33% {top: -30px;}
+    66% {top: 40px;}
+    100% {top: 0;}
+}
