@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>  
+	<title>Home - Saint Bernard Dogs</title>
+	<link>http://saintbernarddogs.niksimon.com/index.html</link>
+	<description>Everything you need to know about St. Bernards is here</description>
+	<item>
+	    <title>FAQ - Saint Bernard Dogs</title>
+	    <link>http://saintbernarddogs.niksimon.com/faq.html</link>
+	    <description>Your questions answered here</description>
+	</item>
+	<item>
+	    <title>Gallery - Saint Bernard Dogs</title>
+	    <link>http://saintbernarddogs.niksimon.com/gallery.html</link>
+	    <description>Never miss a photo of cute puppies!</description>
+	</item>
+	<item>
+	    <title>Getting one - Saint Bernard Dogs</title>
+	    <link>http://saintbernarddogs.niksimon.com/gettingone.html</link>
+	    <description>Get informed before getting a dog</description>
+	</item>
+  </channel>
+</rss>

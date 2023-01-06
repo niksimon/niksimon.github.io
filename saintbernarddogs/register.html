@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Registration and Login page for St. Bernard dogs website"/>
+		<meta name="keywords" content="registration, the, st, saint, bernard, dogs, dog, account, user, name, password, email"/>
+		<meta name="author" content="Nikola Simonović"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+		<link rel="shortcut icon" href="img/icons/favicon.png" type="image/png"/>
+		<title>Registration - St. Bernard Dogs</title>
+    </head>
+    <body>
+		<div id="header-wrap">
+			<header id="header">
+				<a href="index.html" class="header_link"></a>
+			    <h1>Saint Bernard Dogs</h1>
+			</header>
+		</div>
+		<nav id="menu">
+			<ul>
+				<li id="home" class="slide"><a href="index.html">Home</a></li>
+				<li id="getone" class="slide"><a href="gettingone.html">Getting one?</a></li>
+				<li id="faq" class="slide"><a href="faq.html">FAQ</a></li>
+				<li id="gallery" class="slide"><a href="gallery.html">Gallery</a></li>
+				<li id="contact" class="slide"><a href="contact.html">Contact</a></li>
+				<li id="register" class="slide current"><a href="register.html">Registration</a></li>
+				<li id="author" class="slide"><a href="about.html">Author</a></li>
+				<li><form action="#" method="get"><input type="search" name="search" id="search" placeholder="Search" autocomplete="on" autofocus/></form></li>
+			</ul>
+		</nav>
+		<div class="main">
+		    <section id="reg_s">
+				<h2>Create an account</h2>
+				<form action="#" method="post" class="form">
+					<fieldset>
+						<table>
+							<tr>
+								<td>User name:</td>
+								<td><input type="text" name="tbUserName" id="tbUserName" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input type="password" name="pwd" id="pwd" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td>Confirm password:</td>
+								<td><input type="password" name="pwdC" id="pwdC" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td>E-mail:</td>
+								<td><input type="email" name="email" id="email" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td>Country:</td>
+								<td>
+									<select name="country" id="country">
+										<option value="0">Choose...</option>
+										<option value="1">Serbia</option>
+										<option value="2">India</option>
+										<option value="3">USA</option>
+										<option value="3">UK</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td>Dog lover?</td>
+								<td>
+									<input type="radio" name="owner" id="yes"/>&nbsp;<label for="yes">Yes</label>&nbsp;
+									<input type="radio" name="owner" id="no"/>&nbsp;<label for="no">No</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2" class="align">
+									<input type="submit" id="btnRegister" value="Register" class="btnBlue"/>
+									<input type="reset" id="btnReset" value="Reset" class="btnRed"/>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+				<h2>Already a user?</h2>
+				<form action="#" method="post" id="reg_form2" class="form">
+					<fieldset>
+						<table>
+							<tr>
+								<td>User name:</td>
+								<td><input type="text" name="tbUserNameLog" id="tUserNameLog" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td>Password:</td>
+								<td><input type="password" name="pwdLog" id="pwdLog" class="input_field" required/></td>
+							</tr>
+							<tr>
+								<td colspan="2" class="align">
+									<input type="checkbox" id="chbRemember"/>&nbsp;<label for="chbRemember">Remember me</label>
+									&nbsp;<input type="submit" id="btnLogin" value="Login" class="btnBlue"/>
+									<input type="reset" id="btnResetLogin" value="Reset" class="btnRed"/>
+								</td>
+							</tr>
+						</table>
+					</fieldset>
+				</form>
+		    </section>
+		</div>
+		<footer>
+			<div id="social_networks">
+				<ul>
+					<li><a class="rotate1" href="https://www.facebook.com" target="_blank"><img src="img/icons/facebook_icon.png" title="Facebook" alt="facebook icon"/></a></li>
+					<li><a class="rotate2" href="https://www.twitter.com" target="_blank"><img src="img/icons/twitter_icon.png" title="Twitter" alt="twitter icon"/></a></li>
+					<li><a class="rotate1" href="https://plus.google.com" target="_blank"><img src="img/icons/gplus_icon.png" title="Google+" alt="google plus icon"/></a></li>
+					<li><a class="rotate2" href="https://www.instagram.com" target="_blank"><img src="img/icons/instagram_icon.png" title="Instagram" alt="instagram icon"/></a></li>
+					<li><a class="rotate1" href="https://www.youtube.com" target="_blank"><img src="img/icons/youtube_icon.png" title="YouTube" alt="youtube icon"/></a></li>
+					<li><a class="rotate2" href="rss.xml" target="_blank"><img src="img/icons/rss_icon.png" title="RSS" alt="rss icon"/></a></li>
+				</ul>
+			</div>
+			<nav id="footer_nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">Author</a></li>
+					<li><a href="sitemap.xml">Sitemap</a></li>
+				</ul>
+				<span id="copyright">&copy; Nikola Simonović 2014</span>
+			</nav>
+		</footer>
+    </body>
+</html>

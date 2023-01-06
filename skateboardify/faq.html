@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>FAQ - Skateboardify</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Skateboardify - Frequently asked questions"/>
+		<meta name="keywords" content="skateboardify, faq, frequently, asked, questions, skateboard, longboard, electric, board, trucks, wheels, shop"/>
+		<meta name="author" content="Nikola Simonović"/>
+		<link rel="shortcut icon" href="images/icons/favicon.png" type="image/png"/>
+		<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/faq.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/faqtabs.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="title">
+					<h1>Skateboardify</h1>
+					<span>Skateboard shop</span>
+					<a href="index.html"><img src="images/logo.png" alt="Skateboardify logo" title="Skateboardify"/></a>
+				</div>
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#" class="hasdropdown">Skate</a>
+						<ul>
+							<li><a href="skateboards.html">Skateboards</a></li>
+							<li><a href="longboards.html">Longboards</a></li>
+							<li><a href="electricboards.html">Electric boards</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="hasdropdown">Parts</a>
+						<ul>
+							<li><a href="wheels.html">Wheels</a></li>
+							<li><a href="trucks.html">Trucks</a></li>
+						</ul>
+					</li>
+					<li class="current"><a href="faq.html">FAQ</a></li>
+					<li><a href="#" class="hasdropdown">About</a>
+						<ul>
+							<li><a href="author.html">Author</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="documentation.pdf" target="_blank">Documentation</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="right">
+					<div class="loginInfo"><a href="#" id="login">Log in</a></div>
+					<a href="#" id="logout" class="logout">Log out</a>
+					<div id="loginForm" class="loginForm">
+						<form id="formLogin" class="formLogin" action="#" method="GET">
+							<label id="lbUsername" for="tbUsername">Username:</label>
+							<input type="text" id="tbUsername"/>
+							<label id="lbPassword" for="tbPassword">Password:</label>
+							<input type="password" id="tbPassword"/>
+							<input type="button" id="btnLogin" value="Log in"/>
+							<a class="noaccount" href="register.html">Don't have an account?</a>
+						</form>
+					</div>
+					<a href="#" class="search"><img src="images/icons/search.png" alt="Search icon" title="Search"/></a>
+					<div id="searchForm" class="searchForm">
+						<form id="formSearch" action="#" method="GET">
+							<input type="text" name="search" id="tbSearch" value="Search..."/>
+							<input type="button" id="btnSearch" value="FIND"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="main-wrap">
+				<div class="main" id="main">
+					<h2>FREQUENTLY ASKED QUESTIONS</h2>
+					<ul class="tabs">
+						<li class="tab-active"><a href="tab1">ACCOUNT</a></li>
+						<li><a href="tab2">SECURITY &amp; PRIVACY</a></li>
+						<li><a href="tab3">ORDERING</a></li>
+						<li class="last"><a href="tab4">RETURNS</a></li>
+					</ul>
+					<div id="tab1" class="tab-content tab-current">
+						<a href="#" class="open">Why do I need a Skateboardify account?</a>
+						<p>Creating an account lets you step in the magic world of Skateboardify where you are free to roam the lands of skateboards and buy anything you ever wished for on this planet. Just register with your e-mail address, username and a password. Then you can view your orders, track them and many other things! Go and do it now!</p>
+						<a href="#">How do I create an account?</a>
+						<p>You create an account on the Register page, which is to be found somewhere around here, or just place an order and your account will be automatically created for you. Please make sure you enter a well formed password and different from your main e-mail address, just so we don't get in trouble we get hacked. Thanks!</p>
+						<a href="#">How do I track my shipment?</a>
+						<p>You can do that on 17track or any other China post tracking websites. You will get a tracking code from us, so just use that to enter wherever you are asked to and you'll see the most updated information about your order. Good luck!.</p>
+					</div>
+					<div id="tab2" class="tab-content">
+						<a href="#" class="open">Is my personal information secure?</a>
+						<p>Nope! - 100% not safe and not secure, just run away from us as fast as possible! We don't use the latest fancy ultra high super dooper SSL encryption technology (whatever that means) to prevent anyone from accessing your account or any of your information!</p>
+						<a href="#">Can I unsubscribe from your e-mail newsletter?</a>
+						<p>No! You are our prisoner now! Shall you unsubscribe from Skateboardify's e-mail newsletters by using the appropriate link at the bottom of our website you will be punished. We will also make sure your e-mail is filled with a lot of spam!</p>
+						<a href="#">What is Skateboardify's privacy policy?</a>
+						<p>We don't have any privacy policy, nor we ever will. We don't respect any of the privacy of our customers and we will give your information out to third parties! If you have any questions or concerns, throw them in the can as we won't answer any of it. That's just the way we treat our customers.</p>
+					</div>
+					<div id="tab3" class="tab-content">
+						<a href="#" class="open">What are my payment options?</a>
+						<p>Skateboardify currently accepts Visa, MasterCard, Maestro, American Express, Discover, and Western union through our normal checkout proccess. Paypal checkout is also offered. We also accept money orders and bank certified checks.</p>
+						<a href="#">What are my shipping options?</a>
+						<p>UPS, Bex, PostExpress, DHL, Fedex, China post Airmail, British Airmail, Malaysia Airmail, Singapore Airmail and many others.</p>
+						<a href="#">When will my order arrive?</a>
+						<p>Give your order 15 - 60 days to arrive, if it doesn't we won't give you your damn money back! All purchases on Skateboardify are shipped from Belgrade. Winter and extreme weather may sometimes affect deliveries and your order may be stuck in snow somewhere, in Siberia for example.</p>
+						<a href="#">What if my payment fails?</a>
+						<p>Then don't e-mail us about it. Your money is probably in our hands now, or in Paypal's, either way it's lost and the only thing you can do is try to purchase again and give us more money. We promise to send an extra cookie with your order if you succeed.</p>
+					</div>
+					<div id="tab4" class="tab-content">
+						<a href="#" class="open">Can I return an item if I don’t like it?</a>
+						<p>We want you to have peace of mind in knowing that you can always return your purchase for a full refund of the product price if, after holding it in your hands or trying it on, you are not completely satisfied. Our policy is simple: if for any reason you are not completely satisfied with your product, simply return it to us within 60 days of purchase in its original, unused condition for a full refund of the product price. Please click here to read detailed return instructions and information.</p>
+						<a href="#">What if an item I ordered is missing?</a>
+						<p>Then it's missing and it's lost forever in the land unknown. You won't ever find it, so better just forget about it. If you have a problem with that, we don't care. The only thing you can do is buy a new one and we won't refund you anything, so don't bother asking us that!</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrap">
+				<div class="footer">
+					<div class="footer-left">
+						<p>CONNECT</p>
+						<ul class="socialmedia">
+							<li><a href="#"><img src="images/icons/facebook.png" alt="Facebook" title="Facebook"/></a></li>
+							<li><a href="#"><img src="images/icons/twitter.png" alt="Twitter" title="Twitter"/></a></li>
+							<li><a href="#"><img src="images/icons/gplus.png" alt="Google plus" title="Google plus"/></a></li>
+							<li><a href="#"><img src="images/icons/pinterest.png" alt="Pinterest" title="Pinterest"/></a></li>
+							<li><a href="#"><img src="images/icons/youtube.png" alt="Youtube" title="Youtube"/></a></li>
+							<li><a href="rss.xml"><img src="images/icons/rss.png" alt="RSS" title="RSS"/></a></li>
+						</ul>
+						<p>SUBSCRIBE TO OUR NEWSLETTER</p>
+						<form action="#" method="GET" id="formEmail">
+							<input type="text" id="tbEmail" class="tbEmail" value="Enter e-mail..."/>
+							<input type="button" value="SUBSCRIBE" id="btnEmail" class="btnEmail"/>
+						</form>
+					</div>
+					<div class="footer-right">
+						<div class="footer-block">
+							<p>SHOP</p>
+							<ul>
+								<li><a href="skateboards.html">Skateboards</a></li>
+								<li><a href="longboards.html">Longboards</a></li>
+								<li><a href="electricboards.html">Electric boards</a></li>
+								<li><a href="wheels.html">Wheels</a></li>
+								<li><a href="trucks.html">Trucks</a></li>
+							</ul>
+						</div>
+						<div class="footer-block">
+							<p>ABOUT</p>
+							<ul>
+								<li><a href="author.html">Author</a></li>
+								<li><a href="documentation.pdf" target="_blank">Documentation</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="rss.xml">RSS</a></li>
+								<li><a href="sitemap.xml">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="footer-block">
+							<p>ACCOUNT</p>
+							<ul>
+								<li><a href="#" class="gotologin">Log in</a></li>
+								<li><a href="register.html">Sign up</a></li>
+							</ul>
+							<a href="#" class="gototop" title="Go to top">&lt;</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="copyright"><p>Skateboardify | Made in 2016 | Images from <a href="http://www.tactics.com">tactics</a></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

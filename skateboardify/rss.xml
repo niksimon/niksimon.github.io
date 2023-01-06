@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0">
+  <channel>
+		<title>Skateboardify</title>
+		<description>Shop for everything skateboard related, stay up to date with everything we post!</description>
+		<link>http://www.skateboardify.niksimon.com/index.html</link>
+		<item>
+			<title>New skateboards!</title>
+			<description>We just got a bunch of new skateboards we would like you to look at.</description>
+			<link>http://www.skateboardify.niksimon.com/skateboards.html</link>
+		</item>
+		<item>
+			<title>Brand new longboards</title>
+			<description>For a long ride, longboards are the way to go.</description>
+			<link>http://www.skateboardify.niksimon.com/longboards.html</link>
+		</item>
+		<item>
+			<title>Grab your electric skateboard</title>
+			<description>Stop sweating and let the machine do all the work for you.</description>
+			<link>http://www.skateboardify.niksimon.com/electricboards.html</link>
+		</item>
+		<item>
+			<title>New set of wheels</title>
+			<description>Throw those rusty wheels away and grab a new pair.</description>
+			<link>http://www.skateboardify.niksimon.com/wheels.html</link>
+		</item>
+		<item>
+			<title>Good trucks are essential</title>
+			<description>For your safety and ride comfortability, get new trucks.</description>
+			<link>http://www.skateboardify.niksimon.com/trucks.html</link>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Skateboards - Skateboardify</title>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="description" content="Shop skateboards on Skateboardify for best prices on the market"/>
+		<meta name="keywords" content="skateboardify, skateboard, longboard, electric, board, trucks, wheels, shop"/>
+		<meta name="author" content="Nikola Simonović"/>
+		<link rel="shortcut icon" href="images/icons/favicon.png" type="image/png"/>
+		<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'/>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shop.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/shop.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="title">
+					<h1>Skateboardify</h1>
+					<span>Skateboard shop</span>
+					<a href="index.html"><img src="images/logo.png" alt="Skateboardify logo" title="Skateboardify"/></a>
+				</div>
+				<ul class="nav">
+					<li><a href="index.html">Home</a></li>
+					<li class="current"><a href="#" class="hasdropdown">Skate</a>
+						<ul>
+							<li><a href="skateboards.html">Skateboards</a></li>
+							<li><a href="longboards.html">Longboards</a></li>
+							<li><a href="electricboards.html">Electric boards</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="hasdropdown">Parts</a>
+						<ul>
+							<li><a href="wheels.html">Wheels</a></li>
+							<li><a href="trucks.html">Trucks</a></li>
+						</ul>
+					</li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li>
+						<a href="#" class="hasdropdown">About</a>
+						<ul>
+							<li><a href="author.html">Author</a></li>
+							<li><a href="contact.html">Contact us</a></li>
+							<li><a href="documentation.pdf" target="_blank">Documentation</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="right">
+					<div class="loginInfo"><a href="#" id="login">Log in</a></div>
+					<a href="#" id="logout" class="logout">Log out</a>
+					<div id="loginForm" class="loginForm">
+						<form id="formLogin" class="formLogin" action="#" method="GET">
+							<label id="lbUsername" for="tbUsername">Username:</label>
+							<input type="text" id="tbUsername"/>
+							<label id="lbPassword" for="tbPassword">Password:</label>
+							<input type="password" id="tbPassword"/>
+							<input type="button" id="btnLogin" value="Log in"/>
+							<a class="noaccount" href="register.html">Don't have an account?</a>
+						</form>
+					</div>
+					<a href="#" class="search"><img src="images/icons/search.png" alt="Search icon" title="Search"/></a>
+					<div id="searchForm" class="searchForm">
+						<form id="formSearch" action="#" method="GET">
+							<input type="text" name="search" id="tbSearch" value="Search..."/>
+							<input type="button" id="btnSearch" value="FIND"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="main-wrap">
+				<div class="main">
+					<h2>SHOP</h2>
+					<div class="left-shop">
+						<div class="left-inner">
+							<h3 class="above-current">Skate</h3>
+							<ul>
+								<li><a href="skateboards.html" class="shop-current">Skateboards</a></li>
+								<li><a href="longboards.html">Longboards</a></li>
+								<li><a href="electricboards.html">Electric skateboards</a></li>
+							</ul>
+							<h3>Parts</h3>
+							<ul>
+								<li><a href="wheels.html">Wheels</a></li>
+								<li><a href="trucks.html">Trucks</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="right-shop">
+						<div class="shop-info">
+							<p class="shop-title">Shop &gt; Skate &gt; Skateboards</p>
+							<p class="cart"><span id="cart-price">&#36; 0.00</span><i class="fa fa-shopping-cart fancybox" id="view-cart"><i class="cart-tooltip">View cart</i></i></p>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard1.jpg" data-fancybox-group="group" class="fancybox" title="Monster hand skateboard">
+									<img class="product" src="images/skateboards/skateboard1.jpg" alt="Skateboard 1"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Monster hand skateboard</p>
+							<p class="item-price">&#36;39.99</p>
+							<a href="#" id="s1" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard2.jpg" data-fancybox-group="group" class="fancybox" title="Red devil skateboard">
+									<img class="product" src="images/skateboards/skateboard2.jpg" alt="Skateboard 2"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Red devil skateboard</p>
+							<p class="item-price">&#36;29.99</p>
+							<a href="#" id="s2" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard3.jpg" data-fancybox-group="group" class="fancybox" title="Batman skateboard">
+									<img class="product" src="images/skateboards/skateboard3.jpg" alt="Skateboard 3"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Batman skateboard</p>
+							<p class="item-price">&#36;29.99</p>
+							<a href="#" id="s3" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard4.jpg" data-fancybox-group="group" class="fancybox" title="Eagle skateboard">
+									<img class="product" src="images/skateboards/skateboard4.jpg" alt="Skateboard 4"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Eagle skateboard</p>
+							<p class="item-price">&#36;49.99</p>
+							<a href="#" id="s4" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard5.jpg" data-fancybox-group="group" class="fancybox" title="Superman skateboard">
+									<img class="product" src="images/skateboards/skateboard5.jpg" alt="Skateboard 5"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Superman skateboard</p>
+							<p class="item-price">&#36;59.99</p>
+							<a href="#" id="s5" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard6.jpg" data-fancybox-group="group" class="fancybox" title="Shark skateboard">
+									<img class="product" src="images/skateboards/skateboard6.jpg" alt="Skateboard 6"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Shark skateboard</p>
+							<p class="item-price">&#36;49.99</p>
+							<a href="#" id="s6" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard7.jpg" data-fancybox-group="group" class="fancybox" title="Smiley skateboard">
+									<img class="product" src="images/skateboards/skateboard7.jpg" alt="Skateboard 7"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Smiley skateboard</p>
+							<p class="item-price">&#36;49.99</p>
+							<a href="#" id="s7" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard8.jpg" data-fancybox-group="group" class="fancybox" title="Crooked skateboard">
+									<img class="product" src="images/skateboards/skateboard8.jpg" alt="Skateboard 8"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Crooked skateboard</p>
+							<p class="item-price">&#36;79.99</p>
+							<a href="#" id="s8" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="shop-item">
+							<div class="item-image">
+								<div class="item-overlay"><img src="images/icons/loader2.gif" alt="Loading..."/></div>
+								<a href="images/skateboards/large/skateboard9.jpg" data-fancybox-group="group" class="fancybox" title="Skull skateboard">
+									<img class="product" src="images/skateboards/skateboard9.jpg" alt="Skateboard 9"/>
+									<img class="zoomin" src="images/icons/zoom.png" alt="Zoom"/>
+								</a>
+							</div>
+							<p class="item-description">Skull skateboard</p>
+							<p class="item-price">&#36;29.99</p>
+							<a href="#" id="s9" class="btn-cart"><i class="fa fa-shopping-cart"></i>&nbsp;ADD TO CART</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-wrap">
+				<div class="footer">
+					<div class="footer-left">
+						<p>CONNECT</p>
+						<ul class="socialmedia">
+							<li><a href="#"><img src="images/icons/facebook.png" alt="Facebook" title="Facebook"/></a></li>
+							<li><a href="#"><img src="images/icons/twitter.png" alt="Twitter" title="Twitter"/></a></li>
+							<li><a href="#"><img src="images/icons/gplus.png" alt="Google plus" title="Google plus"/></a></li>
+							<li><a href="#"><img src="images/icons/pinterest.png" alt="Pinterest" title="Pinterest"/></a></li>
+							<li><a href="#"><img src="images/icons/youtube.png" alt="Youtube" title="Youtube"/></a></li>
+							<li><a href="rss.xml"><img src="images/icons/rss.png" alt="RSS" title="RSS"/></a></li>
+						</ul>
+						<p>SUBSCRIBE TO OUR NEWSLETTER</p>
+						<form action="#" method="GET" id="formEmail">
+							<input type="text" id="tbEmail" class="tbEmail" value="Enter e-mail..."/>
+							<input type="button" value="SUBSCRIBE" id="btnEmail" class="btnEmail"/>
+						</form>
+					</div>
+					<div class="footer-right">
+						<div class="footer-block">
+							<p>SHOP</p>
+							<ul>
+								<li><a href="skateboards.html">Skateboards</a></li>
+								<li><a href="longboards.html">Longboards</a></li>
+								<li><a href="electricboards.html">Electric boards</a></li>
+								<li><a href="wheels.html">Wheels</a></li>
+								<li><a href="trucks.html">Trucks</a></li>
+							</ul>
+						</div>
+						<div class="footer-block">
+							<p>ABOUT</p>
+							<ul>
+								<li><a href="author.html">Author</a></li>
+								<li><a href="documentation.pdf" target="_blank">Documentation</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="rss.xml">RSS</a></li>
+								<li><a href="sitemap.xml">Sitemap</a></li>
+							</ul>
+						</div>
+						<div class="footer-block">
+							<p>ACCOUNT</p>
+							<ul>
+								<li><a href="#" class="gotologin">Log in</a></li>
+								<li><a href="register.html">Sign up</a></li>
+							</ul>
+							<a href="#" class="gototop" title="Go to top">&lt;</a>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="copyright"><p>Skateboardify | Made in 2016 | Images from <a href="http://www.tactics.com">tactics</a></p></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

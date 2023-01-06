@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items>
+	<!-- skateboards -->
+	<item>
+		<name>Monster hand skateboard</name>
+		<price>39.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard1.jpg</image>
+		<url>skateboards.html</url>
+		<id>s1</id>
+	</item>
+	<item>
+		<name>Red devil skateboard</name>
+		<price>29.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard2.jpg</image>
+		<url>skateboards.html</url>
+		<id>s2</id>
+	</item>
+	<item>
+		<name>Batman skateboard</name>
+		<price>29.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard3.jpg</image>
+		<url>skateboards.html</url>
+		<id>s3</id>
+	</item>
+	<item>
+		<name>Eagle skateboard</name>
+		<price>49.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard4.jpg</image>
+		<url>skateboards.html</url>
+		<id>s4</id>
+	</item>
+	<item>
+		<name>Superman skateboard</name>
+		<price>59.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard5.jpg</image>
+		<url>skateboards.html</url>
+		<id>s5</id>
+	</item>
+	<item>
+		<name>Shark skateboard</name>
+		<price>49.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard6.jpg</image>
+		<url>skateboards.html</url>
+		<id>s6</id>
+	</item>
+	<item>
+		<name>Smiley skateboard</name>
+		<price>49.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard7.jpg</image>
+		<url>skateboards.html</url>
+		<id>s7</id>
+	</item>
+	<item>
+		<name>Crooked skateboard</name>
+		<price>79.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard8.jpg</image>
+		<url>skateboards.html</url>
+		<id>s8</id>
+	</item>
+	<item>
+		<name>Skull skateboard</name>
+		<price>29.99</price>
+		<folder>images/skateboards</folder>
+		<image>skateboard9.jpg</image>
+		<url>skateboards.html</url>
+		<id>s9</id>
+	</item>
+	<!-- longboards -->
+	<item>
+		<name>Black orb longboard</name>
+		<price>69.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard1.jpg</image>
+		<url>longboards.html</url>
+		<id>l1</id>
+	</item>
+	<item>
+		<name>Stripped longboard</name>
+		<price>89.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard2.jpg</image>
+		<url>longboards.html</url>
+		<id>l2</id>
+	</item>
+	<item>
+		<name>Rainbow longboard</name>
+		<price>89.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard3.jpg</image>
+		<url>longboards.html</url>
+		<id>l3</id>
+	</item>
+	<item>
+		<name>Orange &amp; black longboard</name>
+		<price>119.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard4.jpg</image>
+		<url>longboards.html</url>
+		<id>l4</id>
+	</item>
+	<item>
+		<name>Retro longboard</name>
+		<price>79.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard5.jpg</image>
+		<url>longboards.html</url>
+		<id>l5</id>
+	</item>
+	<item>
+		<name>Spiderman longboard</name>
+		<price>99.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard6.jpg</image>
+		<url>longboards.html</url>
+		<id>l6</id>
+	</item>
+	<item>
+		<name>Wolverine claw longboard</name>
+		<price>89.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard7.jpg</image>
+		<url>longboards.html</url>
+		<id>l7</id>
+	</item>
+	<item>
+		<name>Monster hand longboard</name>
+		<price>84.99</price>
+		<folder>images/longboards</folder>
+		<image>longboard8.jpg</image>
+		<url>longboards.html</url>
+		<id>l8</id>
+	</item>
+	<!-- electric boards -->
+	<item>
+		<name>Boosted electric skateboard</name>
+		<price>1499.99</price>
+		<folder>images/electric</folder>
+		<image>boosted.jpg</image>
+		<url>electricboards.html</url>
+		<id>e1</id>
+	</item>
+	<item>
+		<name>ZBoard electric skateboard</name>
+		<price>1099.99</price>
+		<folder>images/electric</folder>
+		<image>zboard.jpg</image>
+		<url>electricboards.html</url>
+		<id>e2</id>
+	</item>
+	<item>
+		<name>The Monolith skateboard</name>
+		<price>1300.99</price>
+		<folder>images/electric</folder>
+		<image>monolith.jpg</image>
+		<url>electricboards.html</url>
+		<id>e3</id>
+	</item>
+	<item>
+		<name>The Marbel electric board</name>
+		<price>1200.99</price>
+		<folder>images/electric</folder>
+		<image>marbel.jpg</image>
+		<url>electricboards.html</url>
+		<id>e4</id>
+	</item>
+	<item>
+		<name>Yuneec E-GO skateboard</name>
+		<price>899.99</price>
+		<folder>images/electric</folder>
+		<image>yuneec.png</image>
+		<url>electricboards.html</url>
+		<id>e5</id>
+	</item>
+	<!-- wheels -->
+	<item>
+		<name>Fancy wheels</name>
+		<price>29.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels1.jpg</image>
+		<url>wheels.html</url>
+		<id>w1</id>
+	</item>
+	<item>
+		<name>Pacman wheels</name>
+		<price>39.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels2.jpg</image>
+		<url>wheels.html</url>
+		<id>w2</id>
+	</item>
+	<item>
+		<name>Red &amp; white wheels</name>
+		<price>39.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels3.jpg</image>
+		<url>wheels.html</url>
+		<id>w3</id>
+	</item>
+	<item>
+		<name>Neon blue wheels</name>
+		<price>59.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels4.jpg</image>
+		<url>wheels.html</url>
+		<id>w4</id>
+	</item>
+	<item>
+		<name>Orange wheels</name>
+		<price>39.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels5.jpg</image>
+		<url>wheels.html</url>
+		<id>w5</id>
+	</item>
+	<item>
+		<name>Green &amp; white wheels</name>
+		<price>49.99</price>
+		<folder>images/wheels</folder>
+		<image>wheels6.jpg</image>
+		<url>wheels.html</url>
+		<id>w6</id>
+	</item>
+	<!-- trucks -->
+	<item>
+		<name>Cyan trucks</name>
+		<price>35.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks1.jpg</image>
+		<url>trucks.html</url>
+		<id>t1</id>
+	</item>
+	<item>
+		<name>Black &amp; white trucks</name>
+		<price>39.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks2.jpg</image>
+		<url>trucks.html</url>
+		<id>t2</id>
+	</item>
+	<item>
+		<name>Silver trucks</name>
+		<price>24.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks3.jpg</image>
+		<url>trucks.html</url>
+		<id>t3</id>
+	</item>
+	<item>
+		<name>Leopard trucks</name>
+		<price>52.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks4.jpg</image>
+		<url>trucks.html</url>
+		<id>t4</id>
+	</item>
+	<item>
+		<name>Red trucks</name>
+		<price>65.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks5.jpg</image>
+		<url>trucks.html</url>
+		<id>t5</id>
+	</item>
+	<item>
+		<name>Black trucks</name>
+		<price>38.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks6.jpg</image>
+		<url>trucks.html</url>
+		<id>t6</id>
+	</item>
+	<item>
+		<name>Blue trucks</name>
+		<price>45.99</price>
+		<folder>images/trucks</folder>
+		<image>trucks7.jpg</image>
+		<url>trucks.html</url>
+		<id>t7</id>
+	</item>
+</items>
