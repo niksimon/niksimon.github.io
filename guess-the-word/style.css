@@ -24,23 +24,26 @@ h1 {
 }
 .word-grid {
     margin: 0 auto;
-    background-color: #222;
+    /* background-color: #222; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     box-sizing: border-box;
 }
 .word-letter {
+    position: relative;
+    background-color: #222;
     display: flex;
     aspect-ratio: 1;
     font-weight: bold;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 2px solid #777;
+    border: 2px solid #666;
     font-size: 2rem;
     overflow: hidden;
     text-transform: uppercase;
+    transition: all 500ms;
 }
 .word-letter-not-in-word {
     background-color: #333;
@@ -55,7 +58,7 @@ h1 {
     border-color: #b59f3b;;
 }
 .word-letter-current {
-    border-color: #fff;
+    border-color: #bbb;
 }
 .keyboard {
     display: grid;
@@ -89,6 +92,7 @@ h1 {
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: background-color 500ms;
 }
 .keyboard-button-enter, .keyboard-button-delete {
     background-color: #666;

@@ -2,7 +2,6 @@ for(let i = 1; i <= 6; i++) {
     for(let j = 1; j <= 5; j++) {
         const el = document.createElement("div");
         el.setAttribute("class", "word-letter");
-        el.setAttribute("data-value", "");
         el.setAttribute("id", `letter${i}${j}`);
         document.getElementById("word-grid").appendChild(el);
     }
@@ -101,6 +100,7 @@ function enterHandler() {
             }
             let chosenLettersCount = {};
             chosen.split("").forEach(c => chosenLettersCount[c] = chosenLettersCount[c] ? chosenLettersCount[c] + 1 : 1);
+            let lettersFinalStates = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0};
             let correctLetters = [];
             // get correctly positioned letters first
             for(let i = 0; i < 5; i++) {
@@ -109,7 +109,7 @@ function enterHandler() {
                     correctLettersInOrder.add(word[i]);
                     document.getElementById(`key-${word[i]}`).classList.remove("keyboard-button-wrong-order");
                     document.getElementById(`key-${word[i]}`).classList.add("keyboard-button-correct");
-                    document.getElementById(`letter${row}${i + 1}`).classList.add("word-letter-correct");
+                    lettersFinalStates[i + 1] = "word-letter-correct";
                     chosenLettersCount[word[i]]--;
                 }
             }
@@ -122,13 +122,20 @@ function enterHandler() {
                     if(!correctLettersInOrder.has(word[i])) {
                         document.getElementById(`key-${word[i]}`).classList.add("keyboard-button-wrong-order");
                     }
-                    document.getElementById(`letter${row}${i + 1}`).classList.add("word-letter-wrong-order");
+                    lettersFinalStates[i + 1] = "word-letter-wrong-order";
                     chosenLettersCount[word[i]]--;
                 }
                 else {
                     document.getElementById(`key-${word[i]}`).classList.add("keyboard-button-not-in-word");
-                    document.getElementById(`letter${row}${i + 1}`).classList.add("word-letter-not-in-word");
+                    lettersFinalStates[i + 1] = "word-letter-not-in-word";
                 }
+            }
+
+            // color letter backgrounds
+            let delay = 0;
+            for(let i = 1; i <= 5; i++, delay += 200) {
+                document.getElementById(`letter${row}${i}`).style.transitionDelay = `${delay}ms`;
+                document.getElementById(`letter${row}${i}`).classList.add(lettersFinalStates[i]);
             }
 
             // found correct word or at last row
@@ -137,17 +144,19 @@ function enterHandler() {
                 document.getElementById("keyboard-button-enter").removeEventListener("click", enterHandler);
                 document.getElementById("keyboard-button-delete").removeEventListener("click", deleteHandler);
                 document.removeEventListener("keydown", keyDownHandler);
-                // win
-                if(correct) {
-                    document.getElementById("modal-text").innerHTML = "YOU WIN!";
-                    confetti();
-                }
-                // lose
-                else {
-                    document.getElementById("modal-text").innerHTML = `<p style='font-size:2.5rem'>WRONG!</p><p style='font-size:1.5rem'>Correct word is <span>${chosen}</span></p>`;
-                }
-                document.getElementById("modal-finished").style.display = "flex";
-                setTimeout(() => {document.getElementById("modal-finished").style.opacity = 1;}, 50);
+                setTimeout(() => {
+                    // win
+                    if(correct) {
+                        document.getElementById("modal-text").innerHTML = "YOU WIN!";
+                        confetti();
+                    }
+                    // lose
+                    else {
+                        document.getElementById("modal-text").innerHTML = `<p style='font-size:2.5rem'>WRONG!</p><p style='font-size:1.5rem'>Correct word is <span>${chosen}</span></p>`;
+                    }
+                    document.getElementById("modal-finished").style.display = "flex";
+                    setTimeout(() => {document.getElementById("modal-finished").style.opacity = 1;}, 50);
+                }, 1000);
                 return;
             }
 
