@@ -1,2 +1,2 @@
 # Portfolio
-https://niksimon.github.io
+https://www.niksimon.com
