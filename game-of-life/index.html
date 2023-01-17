@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(50, 1fr);
+            
+        }
+        .grid div {
+            border: 1px solid #fff;
+            width: 15px;
+            height: 15px;
+        }
+        .dead {
+            background-color: #fff;
+        }
+        .alive {
+            background-color: #222;
+        }
+        .controls {
+            color: #fff;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            padding-top: 10px;
+        }
+        .controls span {
+            padding: 0 10px;
+        }
+        .controls input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid" class="grid"></div>
+    <div class="controls"><span>Speed:</span><input type="range" id="speed" min="0" max="1000" value="900"></div>
+    <script src="game.js"></script>
+</body>
+</html>
