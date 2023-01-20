@@ -18,7 +18,7 @@ h1 {
 }
 .main {
     width: 400px;
-    padding: 0 5px;
+    padding: 0 10px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -39,7 +39,7 @@ h1 {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 2px solid #666;
+    border: 2px solid #555;
     font-size: 2rem;
     overflow: hidden;
     text-transform: uppercase;
@@ -58,7 +58,7 @@ h1 {
     border-color: #b59f3b;;
 }
 .word-letter-current {
-    border-color: #bbb;
+    border-color: #ccc;
 }
 .keyboard {
     display: grid;
@@ -67,17 +67,17 @@ h1 {
 }
 .keyboard-row {
     display: grid;
-    grid-gap: 5px;
-    padding-bottom: 5px;
+    grid-gap: 7px;
+    padding-bottom: 7px;
 }
 .keyboard-row:nth-child(1) {
     grid-template-columns: repeat(10, 1fr);
 }
 .keyboard-row:nth-child(2) {
-    grid-template-columns: repeat(9, 1fr) 2fr;
+    grid-template-columns: repeat(9, 1fr) 1.6fr;
 }
 .keyboard-row:nth-child(3) {
-    grid-template-columns: repeat(7, 1fr) 2.5fr;
+    grid-template-columns: repeat(7, 1fr) 3.2fr;
 }
 .keyboard-button, .keyboard-button-enter, .keyboard-button-delete {
     display: flex;
@@ -178,10 +178,6 @@ h1 {
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
     transform: rotateZ(0);
-}
-.confetti-item-drop {
-    top: 101%;
-    transform: rotateZ(360deg);
 }
 
 @keyframes drop1 {
