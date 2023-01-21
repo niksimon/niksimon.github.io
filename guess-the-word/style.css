@@ -26,9 +26,26 @@ h1 {
     margin: 0 auto;
     /* background-color: #222; */
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     grid-gap: 5px;
     box-sizing: border-box;
+    grid-template-rows: repeat(6, 1fr);
+}
+.word-row {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.word-incorrect-animation {
+    animation: incorrect-animation 300ms ease-in-out;
+}
+@keyframes incorrect-animation {
+    0% { transform: translateX(0px) }
+    10% { transform: translateX(-8px) }
+    30% { transform: translateX(8px) }
+    50% { transform: translateX(-8px) }
+    70% { transform: translateX(8px) }
+    90% { transform: translateX(-8px) }
+    100% { transform: translateX(0px) }
 }
 .word-letter {
     position: relative;
@@ -60,6 +77,16 @@ h1 {
 .word-letter-current {
     border-color: #ccc;
 }
+.word-letter-scale {
+    z-index: 50;
+    animation: scale-animation 150ms ease-in-out;
+}
+@keyframes scale-animation {
+    0% { transform: scale(1.0) }
+    50% { transform: scale(1.2) }
+    100% { transform: scale(1.0) }
+}
+
 .keyboard {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -93,6 +120,7 @@ h1 {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 500ms;
+    transition-delay: 800ms;
 }
 .keyboard-button-enter, .keyboard-button-delete {
     background-color: #666;
@@ -112,6 +140,7 @@ h1 {
 .modal-invalid-word {
     visibility: hidden;
     opacity: 0;
+    z-index: 998;
     background-color: #fff;
     position: fixed;
     color: #000;
@@ -123,9 +152,13 @@ h1 {
     user-select: none;
     text-align: center;
 }
+.modal-invalid-word-show {
+    visibility: visible;
+}
 .modal-finished {
     background-color: rgba(0, 0, 0, 0.85);
     position: fixed;
+    z-index: 999;
     width: 100%;
     height: 100%;
     display: none;

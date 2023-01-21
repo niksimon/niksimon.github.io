@@ -1,10 +1,14 @@
 for(let i = 1; i <= 6; i++) {
+    const wordRow = document.createElement("div");
+    wordRow.setAttribute("class", "word-row");
+    wordRow.setAttribute("id", `row${i}`);
     for(let j = 1; j <= 5; j++) {
-        const el = document.createElement("div");
-        el.setAttribute("class", "word-letter");
-        el.setAttribute("id", `letter${i}${j}`);
-        document.getElementById("word-grid").appendChild(el);
+        const wordLetter = document.createElement("div");
+        wordLetter.setAttribute("class", "word-letter");
+        wordLetter.setAttribute("id", `letter${i}${j}`);
+        wordRow.appendChild(wordLetter);
     }
+    document.getElementById("word-grid").appendChild(wordRow);
 }
 
 let words = null;
@@ -47,6 +51,9 @@ function inputLetter(letter) {
         firstLetter = false;
         document.getElementById(`letter${row}${current}`).innerHTML = letter;
         document.getElementById(`letter${row}${current}`).classList.remove("word-letter-current");
+        document.getElementById(`letter${row}${current}`).classList.remove("word-letter-scale");
+        void document.getElementById(`letter${row}${current}`).offsetWidth;
+        document.getElementById(`letter${row}${current}`).classList.add("word-letter-scale");
         if(current % 5 !== 0) {
             current++;
             document.getElementById(`letter${row}${current}`).classList.add("word-letter-current");
@@ -85,14 +92,20 @@ function enterHandler() {
         // check if word is valid
         if(!words.has(word)) {
             //console.log(word);
-            document.getElementById("modal-invalid-word").style.visibility = "visible";
-            document.getElementById("modal-invalid-word").style.opacity = 1;
-            setTimeout(() => {
-                document.getElementById("modal-invalid-word").style.opacity = 0;
+            document.getElementById(`row${row}`).classList.remove("word-incorrect-animation");
+            void document.getElementById(`row${row}`).offsetWidth;
+            document.getElementById(`row${row}`).classList.add("word-incorrect-animation");
+
+            if(!document.getElementById("modal-invalid-word").classList.contains("modal-invalid-word-show")) {
+                document.getElementById("modal-invalid-word").style.opacity = 1;
+                document.getElementById("modal-invalid-word").classList.add("modal-invalid-word-show");
                 setTimeout(() => {
-                    document.getElementById("modal-invalid-word").style.visibility = "hidden";
-                }, 500);
-            }, 1000);
+                    document.getElementById("modal-invalid-word").style.opacity = 0;
+                    setTimeout(() => {
+                        document.getElementById("modal-invalid-word").classList.remove("modal-invalid-word-show");
+                    }, 500);
+                }, 1000);
+            }
         }
         else {
             let correct = false;
