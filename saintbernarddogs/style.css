@@ -538,7 +538,6 @@ span.first{
     transform:scale(1) rotate(-5deg);
 }
 #social_networks a img{
-    image-rendering: crisp-edges; /* Firefox bugfix */
     width:60px;
     height:60px;
 }
